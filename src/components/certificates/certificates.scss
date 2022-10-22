@@ -1,0 +1,12 @@
+@import "../../common/styles/variables.scss";
+
+.certificates-container {
+    background-color: $bg-dark-2;
+    padding: 6rem 0;
+
+    .certificate-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
