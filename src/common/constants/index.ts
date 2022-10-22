@@ -1,4 +1,5 @@
 import { ICertificate } from "../../model/certificate";
+import { IExperience } from "../../model/experience";
 
 export const mailId: string = "akashsharma15105@gmail.com";
 export const githubUrl: string = "https://github.com/6102hsaka";
@@ -44,5 +45,29 @@ export const certificates: ICertificate[] = [
         url: "https://www.credly.com/badges/e3df02bf-c1e4-4cc2-9b15-8cbbf8436a07",
         imageUri:
             "https://images.credly.com/size/340x340/images/61542181-0e8d-496c-a17c-3d4bf590eda1/azure-data-engineer-associate-600x600.png",
+    },
+];
+
+export const internshipExperience: IExperience[] = [
+    {
+        role: "Full Stack Intern",
+        company: "Cognizant",
+        startDate: "January, 2020",
+        endDate: "May, 2020",
+    },
+    {
+        role: "Summer Intern",
+        company: "Tata Consultancy Services",
+        startDate: "June, 2019",
+        endDate: "August, 2019",
+    },
+];
+
+export const fulltimeExperience: IExperience[] = [
+    {
+        role: "Full Stack Engineer",
+        company: "Cognizant",
+        startDate: "January, 2021",
+        endDate: "Present",
     },
 ];

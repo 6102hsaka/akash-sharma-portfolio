@@ -1,0 +1,46 @@
+@import "../../../common/styles/variables.scss";
+
+.experience-timeline-container {
+    width: 18rem;
+    margin: 1.5rem 0;
+    padding: 1rem 0.5rem;
+    background-color: $bg-dark-2;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 0.4rem $bg-shadow-1;
+
+    .experience-timeline-header {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        color: $text-light-1;
+    }
+
+    .experience-timeline-main {
+        margin-left: -1.5rem;
+        position: relative;
+        color: $text-light-2;
+
+        .experience-timeline {
+            list-style: none;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border-left: 0.1rem dashed $text-light-2;
+        }
+
+        .experience-timeline:last-child {
+            border-left: none;
+        }
+
+        .experience-timeline::before {
+            content: " ";
+            position: absolute;
+            left: 2.25rem;
+            height: 0.6rem;
+            width: 0.6rem;
+            border-radius: 50%;
+            background: $text-light-2;
+            transform: translateY(0.3rem);
+        }
+    }
+}
