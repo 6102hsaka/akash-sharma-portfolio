@@ -1,0 +1,124 @@
+@import "../../common/styles/variables.scss";
+
+.home-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $bg-dark-1;
+
+    .info {
+        width: 50vw;
+
+        a:nth-child(2) {
+            margin: 0 1rem;
+        }
+
+        .link-icons {
+            color: $text-light-2;
+            font-size: 1.5rem;
+        }
+
+        .link-icons:hover {
+            color: $text-light-1;
+        }
+
+        #name {
+            margin: 1rem 0;
+            font-size: calc(1.5rem + 2vw);
+            color: $text-light-1;
+        }
+
+        #description {
+            margin: 0;
+            font-size: calc(0.8rem + 1vw);
+            color: $text-light-2;
+        }
+
+        #resume {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem;
+            text-decoration: none;
+            font-size: calc(0.8rem + 1vw);
+            color: $text-light-2;
+            background-color: transparent;
+            border: none;
+            box-shadow: inset 0.1rem 0.1rem 0.1rem $bg-dark-2,
+                -0.1rem -0.1rem 0.1rem $bg-shadow-1,
+                0.1rem 0.1rem 0.1rem $bg-dark-2,
+                inset -0.1rem -0.1rem 0.1rem $bg-shadow-1;
+        }
+
+        #resume:hover {
+            color: $text-light-1;
+            box-shadow: none;
+        }
+    }
+
+    .skills {
+        position: relative;
+        width: 19.2rem;
+        height: 24rem;
+
+        .skills-front,
+        .skills-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 19.2rem;
+            height: 24rem;
+            border-radius: 1rem;
+            box-sizing: border-box;
+        }
+
+        .skills-front {
+            background-color: $bg-dark-2;
+            transform: translateX(-2rem);
+            padding: 1rem;
+            color: $text-light-1;
+
+            #key-skills-header {
+                font-size: calc(1.5rem + 1vw);
+
+                .star-icon {
+                    color: $yellow-color;
+                    margin-left: 0.5rem;
+                }
+            }
+
+            li {
+                list-style: none;
+                font-family: "Noto Sans Mono", monospace;
+                font-size: calc(1rem + 0.3vw);
+                font-weight: 600;
+            }
+        }
+
+        .skills-background {
+            background-color: $bg-shadow-1;
+            transform: rotateZ(10deg);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .info {
+            width: 80vw;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .skills,
+        .skills-front,
+        .skills-background {
+            width: 16rem !important;
+            height: 20rem !important;
+        }
+
+        .skills-front {
+            transform: translateX(-1.5rem) !important;
+        }
+    }
+}
