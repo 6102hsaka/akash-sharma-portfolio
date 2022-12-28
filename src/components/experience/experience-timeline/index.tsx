@@ -1,4 +1,5 @@
 import { IExperience } from "../../../model/experience";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 import "./timeline.scss";
 
 interface Props {
@@ -7,8 +8,10 @@ interface Props {
 }
 
 const ExperienceTimeline = ({ title, timelines }: Props) => {
+    const timelineRef = useScrollAnimation("section-item-scroll", 0.9);
+
     return (
-        <div className="experience-timeline-container">
+        <div ref={timelineRef} className="experience-timeline-container">
             <div className="experience-timeline-header">{title}</div>
             <ul className="experience-timeline-main">
                 {timelines.map((timeline) => (

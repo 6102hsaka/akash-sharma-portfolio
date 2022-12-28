@@ -1,4 +1,5 @@
 import { ICertificate } from "../../../model/certificate";
+import useScrollAnimation from "../../../hooks/useScrollAnimation";
 import "./certificate.scss";
 
 interface Props {
@@ -6,8 +7,10 @@ interface Props {
 }
 
 const Certificate = ({ certificate }: Props) => {
+    const certificateRef = useScrollAnimation("section-item-scroll", 0.9);
+
     return (
-        <div className="certificate-container">
+        <div ref={certificateRef} className="certificate-container">
             <img
                 src={certificate.imageUri}
                 alt={certificate.name}

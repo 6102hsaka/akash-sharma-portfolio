@@ -7,6 +7,8 @@
     background-color: $bg-dark-2;
     border-radius: 0.8rem;
     box-shadow: 0.5rem 0.5rem 0.4rem $bg-shadow-1;
+    opacity: 0;
+    transform: translateY(10rem);
 
     .experience-timeline-header {
         margin: 1rem 0;

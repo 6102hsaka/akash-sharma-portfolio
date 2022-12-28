@@ -5,6 +5,8 @@
     height: 7rem;
     padding: 1rem;
     position: relative;
+    opacity: 0;
+    transform: translateY(10rem);
 
     .certificate-img,
     .certificate-description {

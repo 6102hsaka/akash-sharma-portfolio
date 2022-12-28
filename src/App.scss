@@ -1,0 +1,24 @@
+.section-header-scroll {
+    animation: section-header-scroll-anim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes section-header-scroll-anim {
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.section-item-scroll {
+    animation: section-item-scroll-anim 0.8s ease 0s 1 normal forwards;
+}
+
+@keyframes section-item-scroll-anim {
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
