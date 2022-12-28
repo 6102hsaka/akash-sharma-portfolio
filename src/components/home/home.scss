@@ -98,7 +98,8 @@
 
         .skills-background {
             background-color: $bg-shadow-1;
-            animation: skills-background-anim 0.8s ease 0s 1 normal forwards;
+            transform: translateX(-2rem) rotateZ(0deg);
+            animation: skills-background-anim 0.5s ease 1.2s 1 normal forwards;
         }
     }
 

@@ -13,12 +13,12 @@ const Experience = () => {
             <SectionHeader text="Experience" />
             <div className="experience-main">
                 <ExperienceTimeline
-                    title="Internship"
-                    timelines={internshipExperience}
-                />
-                <ExperienceTimeline
                     title="Full-time"
                     timelines={fulltimeExperience}
+                />
+                <ExperienceTimeline
+                    title="Internship"
+                    timelines={internshipExperience}
                 />
             </div>
         </section>
