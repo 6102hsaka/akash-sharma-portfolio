@@ -1,3 +1,5 @@
+import React from "react";
+
 import { BsStars } from "react-icons/bs";
 import { SiGithub, SiLeetcode, SiLinkedin } from "react-icons/si";
 

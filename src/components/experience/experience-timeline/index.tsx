@@ -1,3 +1,5 @@
+import React from "react";
+
 import { IExperience } from "../../../model/experience";
 import useScrollAnimation from "../../../hooks/useScrollAnimation";
 import "./timeline.scss";

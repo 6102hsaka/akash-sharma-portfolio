@@ -1,3 +1,5 @@
+import React from "react";
+
 import useScrollAnimation from "../../../hooks/useScrollAnimation";
 import "./sectionHeader.scss";
 

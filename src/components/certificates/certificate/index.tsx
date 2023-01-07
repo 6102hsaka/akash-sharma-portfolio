@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ICertificate } from "../../../model/certificate";
 import useScrollAnimation from "../../../hooks/useScrollAnimation";
 import "./certificate.scss";

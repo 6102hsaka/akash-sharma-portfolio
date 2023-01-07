@@ -1,3 +1,5 @@
+import React from "react";
+
 import { certificates } from "../../common/constants";
 
 import SectionHeader from "../../common/ui/section-header";
