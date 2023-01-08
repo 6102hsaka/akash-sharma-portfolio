@@ -23,7 +23,7 @@ export default function HTML(props) {
                     crossOrigin="anonymous"
                 ></link>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Poppins:wght@400;600&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Poppins:wght@400;600&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789,'-"
                     rel="stylesheet"
                 ></link>
                 <title>Akash Sharma Portfolio</title>
