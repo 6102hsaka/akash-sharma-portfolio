@@ -62,9 +62,15 @@ export const internshipExperience: IExperience[] = [
 
 export const fulltimeExperience: IExperience[] = [
     {
+        role: "Engineer II",
+        company: "Powerschool",
+        startDate: "September, 2023",
+        endDate: "Present",
+    },
+    {
         role: "Full Stack Engineer",
         company: "Cognizant",
         startDate: "January, 2021",
-        endDate: "Present",
+        endDate: "September, 2023",
     },
 ];
